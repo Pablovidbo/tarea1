@@ -1,0 +1,48 @@
+<html>
+    <title>Clase 01</title>
+    <body>
+
+    </body>
+    <script>
+
+        //JSON
+        const aTriangulo = [
+            {
+                "base": 4,
+                "altura": 3
+            },
+            {
+                "base": 6,
+                "altura": 4
+            },
+            {
+                "base": 10,
+                "altura": 5
+            },
+            {
+                "base": 12,
+                "altura": 6
+            },
+            {
+                "base": 14,
+                "altura": 7
+            },
+            {
+                "base": 6,
+                "altura": 2
+            }
+        ];  
+        function triangulo(base, altura) {
+            var area = (base*altura)/2;
+            console.log(base+" + "+altura+ " = "+area)
+        }
+        /*for (let i=0; i<edades.length; i++){
+            console.log(edades[i]+1);
+        } */
+        aTriangulo.forEach((e) => {
+            // es legal
+            triangulo(e.base, e.altura, e.area);
+
+        });
+    </script>
+</html>
